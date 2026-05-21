@@ -1,154 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>DR.BLACKS BLACKHOUSE 😈</title>
+<title>DR.BLACKS</title>
 
-<style>
+<link rel="stylesheet" href="style.css">
 
-body{
-    margin:0;
-    padding:0;
-    background:black;
-    color:white;
-    font-family:Arial;
-    text-align:center;
-}
-
-.overlay{
-    min-height:100vh;
-    background:linear-gradient(to bottom,#000,#111);
-    padding:20px;
-}
-
-h1{
-    margin-top:30px;
-    font-size:35px;
-    color:#ff0033;
-}
-
-.login-box{
-    margin-top:40px;
-}
-
-input{
-    padding:12px;
-    width:220px;
-    border:none;
-    border-radius:10px;
-    outline:none;
-}
-
-button{
-    padding:12px 20px;
-    border:none;
-    border-radius:10px;
-    background:#ff0033;
-    color:white;
-    cursor:pointer;
-    font-weight:bold;
-}
-
-.gallery{
-    display:none;
-    margin-top:40px;
-}
-
-.card{
-    background:#111;
-    border-radius:20px;
-    padding:15px;
-    margin:20px auto;
-    width:90%;
-    max-width:350px;
-    box-shadow:0 0 20px rgba(255,0,50,0.3);
-}
-
-img{
-    width:100%;
-    border-radius:15px;
-}
-
-video{
-    width:100%;
-    border-radius:15px;
-}
-
-.caption{
-    margin-top:10px;
-    font-size:18px;
-}
-
-</style>
 </head>
 
 <body>
 
-<div class="overlay">
+<div id="gallery"></div>
 
-<h1>DR.BLACKS BLACKHOUSE 😈😈</h1>
-
-<div class="login-box">
-
-<input type="password" id="pass" placeholder="Enter Secret Passcode">
-
-<button onclick="login()">Enter</button>
-
-</div>
-
-<div class="gallery" id="gallery">
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=800">
-
-<div class="caption">Funny Meme 😂</div>
-
-</div>
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=800">
-
-<div class="caption">Secret Squad 😎</div>
-
-</div>
-
-<div class="card">
-
-<video controls>
-<source src="video1.mp4" type="video/mp4">
-</video>
-
-<div class="caption">Hidden Clip 🔥</div>
-
-</div>
-
-</div>
-
-</div>
-
-<script>
-
-function login(){
-
-let pass = document.getElementById("pass").value;
-
-if(pass === "blackhouse"){
-
-document.getElementById("gallery").style.display = "block";
-
-}else{
-
-alert("Wrong Passcode 😈");
-
-}
-
-}
-
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>

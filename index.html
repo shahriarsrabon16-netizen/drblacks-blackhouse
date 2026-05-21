@@ -1,23 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>DR.BLACKS</title>
+<title>DR.BLACKS BLACKHOUSE</title>
 
-<link rel="stylesheet" href="style.css">
+<style>
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:black;
+    font-family:Arial;
+    overflow-y:scroll;
+    scroll-snap-type:y mandatory;
+}
+
+.reel{
+    width:100%;
+    height:100vh;
+    position:relative;
+    scroll-snap-align:start;
+}
+
+video,img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.overlay{
+    position:absolute;
+    bottom:30px;
+    left:20px;
+    color:white;
+    z-index:100;
+}
+
+.overlay h1{
+    font-size:24px;
+}
+
+.overlay p{
+    opacity:0.8;
+}
+
+.logo{
+    position:fixed;
+    top:15px;
+    left:15px;
+    z-index:999;
+    background:rgba(0,0,0,0.5);
+    padding:10px 15px;
+    border-radius:20px;
+    color:white;
+    backdrop-filter:blur(10px);
+}
+
+::-webkit-scrollbar{
+    display:none;
+}
+
+</style>
 </head>
 
 <body>
 
-<div id="gallery"></div>
+<div class="logo">😈 BLACKHOUSE 😈</div>
 
-<script src="script.js"></script>
+<!-- VIDEO -->
+
+<div class="reel">
+
+<video autoplay muted loop controls playsinline>
+
+<source src="VID_20260519_084107.mp4" type="video/mp4">
+
+</video>
+
+<div class="overlay">
+
+<h1>@drblacks</h1>
+
+<p>🔥 Funny Vault 🔥</p>
+
+</div>
+
+</div>
+
+<!-- IMAGE -->
+
+<div class="reel">
+
+<img src="Screenshot_2026-05-20-10-30-18-389-edit.jpg">
+
+<div class="overlay">
+
+<h1>@drblacks</h1>
+
+<p>😈 Meme Drop 😈</p>
+
+</div>
+
+</div>
 
 </body>
 </html>

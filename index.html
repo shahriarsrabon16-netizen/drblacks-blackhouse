@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Funny Clips Vault</title>
+  <style>
+    body{
+      background:#111;
+      color:white;
+      text-align:center;
+      font-family:Arial;
+    }
+
+    .content{
+      display:none;
+      margin-top:20px;
+    }
+
+    video{
+      width:300px;
+      margin:10px;
+      border-radius:10px;
+    }
+
+    input,button{
+      padding:10px;
+      margin-top:20px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Funny Clips Vault 😂</h1>
+
+<input type="password" id="pass" placeholder="Enter Passcode">
+<button onclick="checkPass()">Enter</button>
+
+<div class="content" id="vault">
+
+  <h2>Secret Videos 😎</h2>
+
+  <video controls>
+    <source src="video1.mp4" type="video/mp4">
+  </video>
+
+  <video controls>
+    <source src="video2.mp4" type="video/mp4">
+  </video>
+
+</div>
+
+<script>
+function checkPass(){
+  const pass = document.getElementById("pass").value;
+
+  if(pass === "1234"){
+    document.getElementById("vault").style.display="block";
+  }else{
+    alert("Wrong Passcode!");
+  }
+}
+</script>
+
+</body>
+</html>
